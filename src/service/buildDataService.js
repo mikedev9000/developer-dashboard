@@ -6,10 +6,15 @@ const getFailingBuilds = (next) => {
     failing: [
       {
         buildJob: 'my-build',
-        executionNumber: 59,
-        failingSince: 50,
-        url: 'http://jenkins/my-build/execution/59',
-        timestamp: '2017-01-01T12:00:00.000Z'
+        latestAttempt: {
+          executionNumber: 59,
+          timestamp: '2017-01-01T12:00:00.000Z',
+          url: 'http://jenkins/my-build/execution/59'
+        },
+        firstFailure: {
+          executionNumber: 50,
+          timestamp: '2017-01-01T12:00:00.000Z'
+        }
       }
     ]
   });

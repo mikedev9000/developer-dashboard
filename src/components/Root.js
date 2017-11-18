@@ -95,7 +95,11 @@ class Root extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <WorkQueue items={this.props.sprint.tasks} />
+                    <WorkQueue 
+                        sprintTasks={this.props.sprintTasks}
+                        codeReviews={this.props.codeReviews}
+                        buildsFailing={this.props.buildsFailing}
+                    />
                 </div>
             </div>
 
@@ -124,7 +128,10 @@ function mapStateToProps(state) {
     return {
         state: state,
         message: state.testObj,
-        sprint: state.sprint
+        sprintTasks: state.sprint.tasks,
+        codeReviews: state.codeReviews,
+        buildsFailing: state.builds.failing,
+        buildsRecent: state.builds.recent
     };
 }
 

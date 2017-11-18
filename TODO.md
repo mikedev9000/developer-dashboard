@@ -1,6 +1,6 @@
 
 # Work Queue Component
-- [ ] merge all work items into a sorted list, convert list to visual items in the list
+- [X] merge all work items into a sorted list, convert list to visual items in the list
 - adjust styling of work queue items based on state and type of item
   - [ ] show icon and/or different background color for each type of item
   - [ ] show icon of user who is assigned
