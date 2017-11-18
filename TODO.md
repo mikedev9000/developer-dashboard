@@ -1,3 +1,4 @@
 - toastr or similar library for notifications, hooked up to rest api call errors
 - consider allowing notes to be associated with items within this app
 - consider allowing me to ignore items that show up in the queue, or otherwise put some kind of internal status on them to ignore until thier real status changes
+- rename `sprint` to something slightly more generic... what if the tasks come from github issues? What if the develoepr works kanban?

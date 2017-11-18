@@ -9,6 +9,11 @@ export default function testLoadReducer(state = initialState.builds, action) {
         ...state,
         failing: action.failing
       };
+    case '_GET_RECENT_BUILDS_RECEIVED':
+      return {
+        ...state,
+        recent: action.recent
+      }
     default:
       return state;
   }

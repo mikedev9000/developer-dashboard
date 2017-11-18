@@ -5,6 +5,7 @@ export default{
   },
   codeReviews: [],
   builds: {
-    failing: []
+    failing: [],
+    recent: []
   }
 }

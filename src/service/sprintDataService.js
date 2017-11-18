@@ -20,13 +20,25 @@ const sprintDataService = store => next => action => {
           id: 'XYZ-001',
           title: 'Make toast',
           description: 'Everybody likes toast, so just build this feature already!',
-          priority: 100
+          priority: 100,
+          assignee: 'mrmeseeks',
+          state: 'IN_PROGRESS'
         },
         {
           id: 'XYZ-002',
           title: 'Buy butter',
           description: 'Now that I have toast, I just realized that it needs butter. Doh!',
-          priority: 50
+          priority: 50,
+          assignee: 'mikedev9000',
+          state: 'NOT_STARTED'
+        },
+        {
+          id: 'XYZ-003',
+          title: 'drink coffee',
+          description: '',
+          priority: 10,
+          assignee: 'mikedev9000',
+          state: 'COMPLETED'
         }
       ]
     });
