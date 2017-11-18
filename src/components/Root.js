@@ -85,15 +85,7 @@ class Root extends Component {
     render() {
         return (
 
-            <div className='container-fluid'>
-                <div className="row">
-                    <div className="col-lg-12">
-                        <img src={logo} alt="" />
-                        <h1>
-                            Welcome to React + Redux Starter Kit hahaha
-                </h1>
-                    </div>
-                </div>
+            <div className='container'>
                 <div className="row">
                     <WorkQueue 
                         sprintTasks={this.props.sprintTasks}
