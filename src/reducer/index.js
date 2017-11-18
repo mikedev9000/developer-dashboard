@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 import testObj from './testReducer';
+import sprint from './sprint';
 
 const rootReducer = combineReducers({
-  testObj
+  testObj,
+  sprint
 });
 
 export default rootReducer;

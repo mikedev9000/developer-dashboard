@@ -1,3 +1,6 @@
 export default{
-  testObj:"Welcome to React + Redux Starter Kit"
+  testObj:"Welcome to React + Redux Starter Kit",
+  sprint: {
+    tasks: []
+  }
 }

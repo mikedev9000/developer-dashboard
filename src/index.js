@@ -7,7 +7,6 @@ import {Provider} from 'react-redux';
 import Root from './components/Root';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-
 const store = configureStore();
 
 render(
@@ -16,3 +15,5 @@ render(
     </Provider>,
     document.getElementById('app')
 );
+
+store.dispatch({type: '_INITIALIZE_STATE'});
