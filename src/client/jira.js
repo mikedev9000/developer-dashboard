@@ -20,11 +20,18 @@ class Jira {
         onError(err);
         return;
       }
-
-      onSuccess(res.data.map(issue => {
-        // TODO - convert issue to generic task used by UI
-        return issue;
-      }));
+      
+      onSuccess(res.body.issues.map(issue => ({
+        id: issue.key,
+        title: issue.fields.summary,
+        description: issue.fields.description,
+        priority: 100, //TODO - get the actual ranking from jira
+        assignee: issue.fields.assignee && {
+          name: issue.fields.assignee.name,
+          avartarUrl: issue.fields.assignee.avatarUrls['24x24']
+        },
+        state: issue.fields.status.name
+      })));
     });
   }
 
