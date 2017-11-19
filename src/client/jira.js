@@ -28,7 +28,8 @@ class Jira {
         priority: 100, //TODO - get the actual ranking from jira
         assignee: issue.fields.assignee && {
           name: issue.fields.assignee.name,
-          avartarUrl: issue.fields.assignee.avatarUrls['24x24']
+          avatarUrl: issue.fields.assignee.avatarUrls['24x24'],
+          isMe: issue.fields.assignee.name === env.jira.username
         },
         state: {
           name: issue.fields.status.name,
