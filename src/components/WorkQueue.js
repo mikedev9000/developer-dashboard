@@ -8,8 +8,8 @@ const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
   <div className="work-queue">
     <ListGroup>
       {buildsFailing.map(item => 
-        <div className="failing-build">
-          <ListGroupItem key={`buildFailing-${item.buildJob}-${item.firstFailure.executionNumber}`}>
+        <div className="failing-build" key={`buildFailing-${item.buildJob}-${item.firstFailure.executionNumber}`}>
+          <ListGroupItem>
             Failing Builds: {item.buildJob} - {item.firstFailure.executionNumber}
           </ListGroupItem>
         </div>
