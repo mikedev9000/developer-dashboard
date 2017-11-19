@@ -13,14 +13,14 @@ class Jira {
     request
     .get(`/jira/rest/api/2/search`)
     .auth(env.jira.username, env.jira.password)
-    .query({ jql: `Project=${env.jira.project} AND Sprint in openSprints()` })
+    .query({ jql: `Project=${env.jira.project} AND Sprint in openSprints() ORDER BY RANK ASC` })
     .set('Accept', 'application/json')
     .end((err, res) => {
       if(err) {
         onError(err);
         return;
       }
-      
+
       onSuccess(res.body.issues.map(issue => ({
         id: issue.key,
         title: issue.fields.summary,
@@ -30,7 +30,13 @@ class Jira {
           name: issue.fields.assignee.name,
           avartarUrl: issue.fields.assignee.avatarUrls['24x24']
         },
-        state: issue.fields.status.name
+        state: {
+          name: issue.fields.status.name
+        },
+        type: {
+          name: issue.fields.issuetype.name,
+          iconUrl: issue.fields.issuetype.iconUrl
+        }
       })));
     });
   }

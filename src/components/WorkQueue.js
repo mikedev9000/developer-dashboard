@@ -17,13 +17,13 @@ const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
 
       {codeReviews.map(item => 
         <ListGroupItem key={`codeReview-${item.id}`}>
-          Code Review: {item.repository} - {item.title} - {item.sourceBranch} to {item.targetBranch}
+         Code Review: {item.repository} - {item.title} - {item.sourceBranch} to {item.targetBranch}
         </ListGroupItem>
       )}
 
       {sprintTasks.map(item => 
         <ListGroupItem key={`sprintTask-${item.id}`}>
-          SprintTask: {item.id} - {item.title}
+        <img src={item.type.iconUrl} />  {item.id} - {item.title}
         </ListGroupItem>
       )}
     </ListGroup>
