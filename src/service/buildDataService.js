@@ -1,23 +1,12 @@
-import request from 'superagent';
+import bamboo from '../client/bamboo';
 
 const getFailingBuilds = (next) => {
-  next({
-    type: '_GET_FAILING_BUILDS_RECEIVED',
-    failing: [
-      {
-        buildJob: 'my-build',
-        latestAttempt: {
-          executionNumber: 59,
-          timestamp: '2017-01-01T12:00:00.000Z',
-          url: 'http://jenkins/my-build/execution/59'
-        },
-        firstFailure: {
-          executionNumber: 50,
-          timestamp: '2017-01-01T12:00:00.000Z'
-        }
-      }
-    ]
-  });
+  bamboo.getFailingBuilds(failing => {
+    next({
+      type: '_GET_FAILING_BUILDS_RECEIVED',
+      failing
+    })
+  }, err => console.log('failed to load failing builds: ', err));
 };
 
 const getRecentBuilds = (next) => {

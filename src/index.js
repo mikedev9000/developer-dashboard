@@ -16,4 +16,7 @@ render(
     document.getElementById('app')
 );
 
+
 store.dispatch({type: '_INITIALIZE_STATE'});
+
+setInterval(() => store.dispatch({type: '_INITIALIZE_STATE'}), 60000);

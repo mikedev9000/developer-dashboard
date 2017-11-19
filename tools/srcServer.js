@@ -28,6 +28,14 @@ app.use('/bitbucket', proxy({
   pathRewrite: {'^/bitbucket' : ''}
 }));
 
+// TODO - pull from .env.js
+app.use('/bamboo', proxy({
+  target:'http://bamboo.local',
+  changeOrigin: true,
+  secure: false,
+  pathRewrite: {'^/bamboo' : ''}
+}));
+
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath
