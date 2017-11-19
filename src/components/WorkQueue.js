@@ -5,14 +5,14 @@ import { ListGroup, ListGroupItem } from 'react-bootstrap';
  * This is a view of _all_ work items waiting for my attention.
  */
 const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
-  <div>
-    <h1>Work Queue</h1>
+  <div className="work-queue">
     <ListGroup>
-
       {buildsFailing.map(item => 
-        <ListGroupItem key={`buildFailing-${item.buildJob}-${item.firstFailure.executionNumber}`}>
-          Failing Builds: {item.buildJob} - {item.firstFailure.executionNumber}
-        </ListGroupItem>
+        <div className="failing-build">
+          <ListGroupItem key={`buildFailing-${item.buildJob}-${item.firstFailure.executionNumber}`}>
+            Failing Builds: {item.buildJob} - {item.firstFailure.executionNumber}
+          </ListGroupItem>
+        </div>
       )}
 
       {codeReviews.map(item => 
@@ -22,9 +22,13 @@ const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
       )}
 
       {sprintTasks.map(item => 
-        <ListGroupItem key={`sprintTask-${item.id}`}>
-        <img src={item.type.iconUrl} />  {item.id} - {item.title}
-        </ListGroupItem>
+        <div key={`sprintTask-${item.id}`} className={item.state.isClosed ? 'item-closed' : 'item-open'}>
+          <ListGroupItem>
+            <img src={item.type.iconUrl} />
+            <a href={item.link} target="__blank">{item.id}</a>
+            {item.title}
+          </ListGroupItem>
+        </div>
       )}
     </ListGroup>
   </div>

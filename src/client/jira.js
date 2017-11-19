@@ -31,12 +31,14 @@ class Jira {
           avartarUrl: issue.fields.assignee.avatarUrls['24x24']
         },
         state: {
-          name: issue.fields.status.name
+          name: issue.fields.status.name,
+          isClosed: issue.fields.resolution !== null
         },
         type: {
           name: issue.fields.issuetype.name,
           iconUrl: issue.fields.issuetype.iconUrl
-        }
+        },
+        link: `${env.jira.baseUrl}/browse/${issue.key}`
       })));
     });
   }
