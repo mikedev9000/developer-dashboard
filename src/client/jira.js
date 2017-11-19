@@ -1,20 +1,19 @@
 import request from 'superagent';
 
-import issuesInCurrentSprint from './mock-data/issues_in_current_sprint.json';
+import env from  '../.env.js';
 
-const myProject = 'SCRUM';
 
 const mockData = {
-  [`/rest/api/2/search?jql=Project=${myProject} AND Sprint in openSprints()`] : issuesInCurrentSprint
+  [`/rest/api/2/search?jql=Project=${env.jira.project} AND Sprint in openSprints()`] : '/client/mock-data/issues_in_current_sprint.json'
 }
 
 class Jira {
 
   static getIssuesInCurrentSprint(onSuccess, onError) {
     request
-    .post('/jira/issues')
-    .send({ name: 'Manny', species: 'cat' })
-    .set('X-API-Key', 'foobar')
+    .get(`/jira/rest/api/2/search`)
+    .auth(env.jira.username, env.jira.password)
+    .query({ jql: `Project=${env.jira.project} AND Sprint in openSprints()` })
     .set('Accept', 'application/json')
     .end((err, res) => {
       if(err) {
@@ -24,6 +23,7 @@ class Jira {
 
       onSuccess(res.data.map(issue => {
         // TODO - convert issue to generic task used by UI
+        return issue;
       }));
     });
   }

@@ -13,6 +13,9 @@ const sprintDataService = store => next => action => {
   case '_INITIALIZE_STATE':
     // falls through
   case '_GET_SPRINT_TASKS':
+  try {
+  jira.getIssuesInCurrentSprint((result) => console.log('yay', result), (err) => console.log('fuck', err));
+  } catch(e) {console.log('oops', e)}
     next({
       type: '_GET_SPRINT_TASKS_RECEIVED',
       tasks: [

@@ -9,6 +9,11 @@
 - [ ] allow user to add tags to items in the work queue
 - [ ] allow user to highlight items in the work queue using a filter on content + notes + tags 
 
+# API integration
+- [ ] adjust sprintDataService to pull from actual JIRA instance and test
+- [ ] adjust buildDataService to pull from actual bamboo instance and test
+- [ ] adjust codeReviewDataService to pull from actual bitbucket instance
+
 # Refactoring and nice-to-haves
 
 - toastr or similar library for notifications, hooked up to rest api call errors
