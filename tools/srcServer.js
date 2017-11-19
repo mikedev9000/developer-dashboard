@@ -12,11 +12,20 @@ const port = 3000;
 const app = express();
 const compiler = webpack(config);
 
+// TODO - pull from .env.js
 app.use('/jira', proxy({
   target:'http://192.168.99.100:32769',
   changeOrigin: true,
   secure: false,
   pathRewrite: {'^/jira' : ''}
+}));
+
+// TODO - pull from .env.js
+app.use('/bitbucket', proxy({
+  target:'http://192.168.99.100:32771',
+  changeOrigin: true,
+  secure: false,
+  pathRewrite: {'^/bitbucket' : ''}
 }));
 
 app.use(require('webpack-dev-middleware')(compiler, {
