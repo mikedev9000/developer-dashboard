@@ -1,0 +1,1471 @@
+{
+   "expand" : "schema,names",
+   "issues" : [
+      {
+         "key" : "SCRUM-24",
+         "fields" : {
+            "issuelinks" : [],
+            "description" : null,
+            "progress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "resolutiondate" : null,
+            "customfield_10000" : null,
+            "versions" : [],
+            "priority" : {
+               "id" : "3",
+               "name" : "Medium",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+            },
+            "issuetype" : {
+               "subtask" : true,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10000",
+               "name" : "Sub-task",
+               "description" : "The sub-task of the issue",
+               "id" : "10000",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/subtask_alternate.png"
+            },
+            "created" : "2017-11-19T15:11:52.000+0000",
+            "watches" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-24/watchers",
+               "watchCount" : 1,
+               "isWatching" : true
+            },
+            "timeoriginalestimate" : null,
+            "creator" : {
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24"
+               },
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000"
+            },
+            "status" : {
+               "id" : "10000",
+               "name" : "To Do",
+               "description" : "",
+               "iconUrl" : "http://192.168.99.100:32769/",
+               "statusCategory" : {
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/2",
+                  "colorName" : "blue-gray",
+                  "key" : "new",
+                  "id" : 2,
+                  "name" : "To Do"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/10000"
+            },
+            "aggregatetimespent" : null,
+            "updated" : "2017-11-19T15:11:52.000+0000",
+            "reporter" : {
+               "timeZone" : "Etc/UTC",
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "active" : true,
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               }
+            },
+            "parent" : {
+               "key" : "SCRUM-13",
+               "id" : "10012",
+               "fields" : {
+                  "summary" : "As a developer, I can update details on an item using the Detail View >> Click the \"SCRUM-13\" link at the top of this card to open the detail view",
+                  "priority" : {
+                     "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+                     "name" : "Medium",
+                     "id" : "3"
+                  },
+                  "issuetype" : {
+                     "iconUrl" : "http://192.168.99.100:32769/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                     "avatarId" : 10303,
+                     "name" : "Bug",
+                     "id" : "10004",
+                     "description" : "A problem which impairs or prevents the functions of the product.",
+                     "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10004",
+                     "subtask" : false
+                  },
+                  "status" : {
+                     "statusCategory" : {
+                        "colorName" : "blue-gray",
+                        "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/2",
+                        "name" : "To Do",
+                        "id" : 2,
+                        "key" : "new"
+                     },
+                     "iconUrl" : "http://192.168.99.100:32769/",
+                     "name" : "To Do",
+                     "id" : "10000",
+                     "description" : "",
+                     "self" : "http://192.168.99.100:32769/rest/api/2/status/10000"
+                  }
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/10012"
+            },
+            "timeestimate" : null,
+            "aggregatetimeoriginalestimate" : null,
+            "components" : [],
+            "aggregatetimeestimate" : null,
+            "timespent" : null,
+            "project" : {
+               "name" : "scrum-example",
+               "id" : "10000",
+               "key" : "SCRUM",
+               "avatarUrls" : {
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000"
+            },
+            "resolution" : null,
+            "labels" : [],
+            "duedate" : null,
+            "assignee" : null,
+            "fixVersions" : [],
+            "subtasks" : [],
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "environment" : null,
+            "workratio" : -1,
+            "customfield_10005" : "0|i00053:",
+            "votes" : {
+               "hasVoted" : false,
+               "votes" : 0,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-24/votes"
+            },
+            "summary" : "horay, my subtask is here!",
+            "lastViewed" : "2017-11-19T15:11:53.201+0000",
+            "aggregateprogress" : {
+               "total" : 0,
+               "progress" : 0
+            }
+         },
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "id" : "10023",
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10023"
+      },
+      {
+         "key" : "SCRUM-17",
+         "id" : "10016",
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "fields" : {
+            "progress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "description" : "*To delete this Sample Project _(must be performed by a user with Administration rights)_* \n- Open the administration interface to the projects page by using the keyboard shortcut 'g' then 'g' and typing 'Projects' in to the search dialog\n- Select the \"Delete\" link for the \"scrum-example\" project\n\n*To delete the Sample Project workflow and workflow scheme _(must be performed by a user with Administration rights)_* \n- Open the administration interface to the workflow schemes page by using the keyboard shortcut 'g' then 'g' and typing 'Workflow Schemes' in to the search dialog\n- Select the \"Delete\" link for the \"SCRUM: Software Simplified Workflow Scheme\" workflow scheme\n- Go to the workflows page by using the keyboard shortcut 'g' then 'g' and typing 'Workflows' in to the search dialog(_OnDemand users should select the second match for Workflows_)\n- Expand the \"Inactive\" section\n- Select the \"Delete\" link for the \"Software Simplified Workflow  for Project SCRUM\" workflow\n\n*To delete this Board _(must be performed by the owner of this Board or an Administrator)_*\n- Click the \"Tools\" cog at the top right of this board\n- Select \"Delete\"",
+            "issuelinks" : [],
+            "versions" : [],
+            "priority" : {
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "id" : "3",
+               "name" : "Medium",
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+            },
+            "issuetype" : {
+               "avatarId" : 10303,
+               "description" : "A problem which impairs or prevents the functions of the product.",
+               "name" : "Bug",
+               "id" : "10004",
+               "iconUrl" : "http://192.168.99.100:32769/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+               "subtask" : false,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10004"
+            },
+            "resolutiondate" : "2017-11-15T22:16:04.000+0000",
+            "customfield_10000" : null,
+            "status" : {
+               "statusCategory" : {
+                  "key" : "done",
+                  "name" : "Done",
+                  "id" : 3,
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/3",
+                  "colorName" : "green"
+               },
+               "iconUrl" : "http://192.168.99.100:32769/",
+               "description" : "",
+               "id" : "10001",
+               "name" : "Done",
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/10001"
+            },
+            "creator" : {
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "name" : "mikedev9000"
+            },
+            "aggregatetimespent" : null,
+            "created" : "2017-11-12T05:40:04.000+0000",
+            "watches" : {
+               "isWatching" : false,
+               "watchCount" : 0,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-17/watchers"
+            },
+            "timeoriginalestimate" : null,
+            "reporter" : {
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "avatarUrls" : {
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24"
+               },
+               "name" : "mikedev9000"
+            },
+            "updated" : "2017-11-15T22:16:04.000+0000",
+            "aggregatetimeoriginalestimate" : null,
+            "components" : [],
+            "timeestimate" : null,
+            "project" : {
+               "avatarUrls" : {
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "id" : "10000",
+               "name" : "scrum-example",
+               "key" : "SCRUM"
+            },
+            "resolution" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/resolution/10000",
+               "name" : "Done",
+               "id" : "10000",
+               "description" : "Work has been completed on this issue."
+            },
+            "timespent" : null,
+            "labels" : [],
+            "duedate" : null,
+            "aggregatetimeestimate" : null,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "environment" : null,
+            "workratio" : -1,
+            "assignee" : {
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "active" : true,
+               "timeZone" : "Etc/UTC"
+            },
+            "fixVersions" : [],
+            "subtasks" : [],
+            "aggregateprogress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "customfield_10005" : "0|i0003j:",
+            "summary" : "Instructions for deleting this sample board and project are in the description for this issue >> Click the \"SCRUM-17\" link and read the description tab of the detail view for more",
+            "votes" : {
+               "hasVoted" : false,
+               "votes" : 0,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-17/votes"
+            },
+            "lastViewed" : "2017-11-19T15:10:01.258+0000"
+         },
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10016"
+      },
+      {
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10015",
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "fields" : {
+            "created" : "2017-10-22T09:36:04.000+0000",
+            "watches" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-16/watchers",
+               "isWatching" : false,
+               "watchCount" : 0
+            },
+            "timeoriginalestimate" : null,
+            "status" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/10001",
+               "statusCategory" : {
+                  "key" : "done",
+                  "name" : "Done",
+                  "id" : 3,
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/3",
+                  "colorName" : "green"
+               },
+               "iconUrl" : "http://192.168.99.100:32769/",
+               "name" : "Done",
+               "id" : "10001",
+               "description" : ""
+            },
+            "creator" : {
+               "avatarUrls" : {
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com"
+            },
+            "aggregatetimespent" : null,
+            "updated" : "2017-11-13T12:12:04.000+0000",
+            "reporter" : {
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "name" : "mikedev9000",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "timeZone" : "Etc/UTC",
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "active" : true
+            },
+            "description" : null,
+            "issuelinks" : [],
+            "progress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "resolutiondate" : "2017-11-13T12:12:04.000+0000",
+            "customfield_10000" : null,
+            "versions" : [],
+            "priority" : {
+               "name" : "Medium",
+               "id" : "3",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+            },
+            "issuetype" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10002",
+               "subtask" : false,
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/story.svg",
+               "description" : "Created by JIRA Software - do not edit or delete. Issue type for a user story.",
+               "name" : "Story",
+               "id" : "10002"
+            },
+            "assignee" : null,
+            "fixVersions" : [],
+            "subtasks" : [],
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]",
+               "com.atlassian.greenhopper.service.sprint.Sprint@5bb08a44[id=2,rapidViewId=1,state=CLOSED,name=Sample Sprint 1,startDate=2017-10-29T04:30:10.541Z,endDate=2017-11-12T04:30:10.541Z,completeDate=2017-11-12T03:10:10.541Z,sequence=2,goal=<null>]"
+            ],
+            "environment" : null,
+            "workratio" : -1,
+            "customfield_10005" : "0|i0003b:",
+            "votes" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-16/votes",
+               "hasVoted" : false,
+               "votes" : 0
+            },
+            "summary" : "As a team, we can finish the sprint by clicking the cog icon next to the sprint name above the \"To Do\" column then selecting \"Complete Sprint\" >> Try closing this sprint now",
+            "lastViewed" : null,
+            "aggregateprogress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "timeestimate" : null,
+            "aggregatetimeoriginalestimate" : null,
+            "components" : [],
+            "aggregatetimeestimate" : null,
+            "customfield_10006" : 2,
+            "timespent" : null,
+            "resolution" : {
+               "name" : "Done",
+               "id" : "10000",
+               "description" : "Work has been completed on this issue.",
+               "self" : "http://192.168.99.100:32769/rest/api/2/resolution/10000"
+            },
+            "project" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "avatarUrls" : {
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324",
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324"
+               },
+               "key" : "SCRUM",
+               "id" : "10000",
+               "name" : "scrum-example"
+            },
+            "labels" : [],
+            "duedate" : null
+         },
+         "id" : "10015",
+         "key" : "SCRUM-16"
+      },
+      {
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10014",
+         "key" : "SCRUM-15",
+         "fields" : {
+            "resolution" : {
+               "id" : "10000",
+               "name" : "Done",
+               "description" : "Work has been completed on this issue.",
+               "self" : "http://192.168.99.100:32769/rest/api/2/resolution/10000"
+            },
+            "timespent" : null,
+            "project" : {
+               "avatarUrls" : {
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "name" : "scrum-example",
+               "id" : "10000",
+               "key" : "SCRUM"
+            },
+            "labels" : [],
+            "duedate" : null,
+            "aggregatetimeestimate" : null,
+            "customfield_10006" : 4,
+            "aggregatetimeoriginalestimate" : null,
+            "components" : [],
+            "timeestimate" : null,
+            "aggregateprogress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "customfield_10005" : "0|i00033:",
+            "votes" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-15/votes",
+               "votes" : 0,
+               "hasVoted" : false
+            },
+            "summary" : "As a scrum master, I can see the progress of a sprint via the Burndown Chart >> Click \"Reports\" to view the Burndown Chart",
+            "lastViewed" : null,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "environment" : null,
+            "workratio" : -1,
+            "fixVersions" : [],
+            "assignee" : null,
+            "subtasks" : [],
+            "versions" : [],
+            "priority" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+               "id" : "3",
+               "name" : "Medium",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg"
+            },
+            "issuetype" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10002",
+               "subtask" : false,
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/story.svg",
+               "id" : "10002",
+               "name" : "Story",
+               "description" : "Created by JIRA Software - do not edit or delete. Issue type for a user story."
+            },
+            "resolutiondate" : "2017-11-16T20:16:04.000+0000",
+            "customfield_10000" : null,
+            "progress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "issuelinks" : [],
+            "description" : null,
+            "reporter" : {
+               "active" : true,
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48"
+               }
+            },
+            "updated" : "2017-11-16T20:16:04.000+0000",
+            "creator" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "avatarUrls" : {
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               },
+               "name" : "mikedev9000"
+            },
+            "status" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/10001",
+               "name" : "Done",
+               "id" : "10001",
+               "description" : "",
+               "statusCategory" : {
+                  "colorName" : "green",
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/3",
+                  "name" : "Done",
+                  "id" : 3,
+                  "key" : "done"
+               },
+               "iconUrl" : "http://192.168.99.100:32769/"
+            },
+            "aggregatetimespent" : null,
+            "created" : "2017-11-12T05:40:04.000+0000",
+            "watches" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-15/watchers",
+               "watchCount" : 0,
+               "isWatching" : false
+            },
+            "timeoriginalestimate" : null
+         },
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "id" : "10014"
+      },
+      {
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10013",
+         "key" : "SCRUM-14",
+         "id" : "10013",
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "fields" : {
+            "lastViewed" : null,
+            "summary" : "As a user, I can find important items on the board by using the customisable \"Quick Filters\" above >> Try clicking the \"Only My Issues\" Quick Filter above",
+            "votes" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-14/votes",
+               "hasVoted" : false,
+               "votes" : 0
+            },
+            "customfield_10005" : "0|i0002v:",
+            "aggregateprogress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "subtasks" : [],
+            "assignee" : {
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               }
+            },
+            "fixVersions" : [],
+            "workratio" : -1,
+            "environment" : null,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "customfield_10006" : 3,
+            "aggregatetimeestimate" : null,
+            "duedate" : null,
+            "labels" : [],
+            "timespent" : null,
+            "resolution" : null,
+            "project" : {
+               "name" : "scrum-example",
+               "id" : "10000",
+               "key" : "SCRUM",
+               "avatarUrls" : {
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000"
+            },
+            "timeestimate" : null,
+            "components" : [],
+            "aggregatetimeoriginalestimate" : null,
+            "updated" : "2017-11-18T10:40:04.000+0000",
+            "reporter" : {
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "avatarUrls" : {
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48"
+               },
+               "name" : "mikedev9000"
+            },
+            "timeoriginalestimate" : null,
+            "watches" : {
+               "watchCount" : 0,
+               "isWatching" : false,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-14/watchers"
+            },
+            "created" : "2017-11-18T10:40:04.000+0000",
+            "aggregatetimespent" : null,
+            "status" : {
+               "description" : "",
+               "id" : "10000",
+               "name" : "To Do",
+               "statusCategory" : {
+                  "name" : "To Do",
+                  "id" : 2,
+                  "key" : "new",
+                  "colorName" : "blue-gray",
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/2"
+               },
+               "iconUrl" : "http://192.168.99.100:32769/",
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/10000"
+            },
+            "creator" : {
+               "avatarUrls" : {
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "name" : "mikedev9000",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "active" : true,
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "timeZone" : "Etc/UTC"
+            },
+            "customfield_10000" : null,
+            "resolutiondate" : null,
+            "issuetype" : {
+               "description" : "Created by JIRA Software - do not edit or delete. Issue type for a user story.",
+               "name" : "Story",
+               "id" : "10002",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/story.svg",
+               "subtask" : false,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10002"
+            },
+            "versions" : [],
+            "priority" : {
+               "name" : "Medium",
+               "id" : "3",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+            },
+            "issuelinks" : [],
+            "description" : "*Creating Quick Filters*\n\nYou can add your own Quick Filters in the board configuration (select *Board > Configure*)",
+            "progress" : {
+               "total" : 0,
+               "progress" : 0
+            }
+         }
+      },
+      {
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10012",
+         "id" : "10012",
+         "fields" : {
+            "timeestimate" : null,
+            "aggregatetimeoriginalestimate" : null,
+            "components" : [],
+            "aggregatetimeestimate" : null,
+            "labels" : [],
+            "project" : {
+               "avatarUrls" : {
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "id" : "10000",
+               "name" : "scrum-example",
+               "key" : "SCRUM"
+            },
+            "resolution" : null,
+            "timespent" : null,
+            "duedate" : null,
+            "subtasks" : [
+               {
+                  "self" : "http://192.168.99.100:32769/rest/api/2/issue/10023",
+                  "id" : "10023",
+                  "fields" : {
+                     "status" : {
+                        "self" : "http://192.168.99.100:32769/rest/api/2/status/10000",
+                        "statusCategory" : {
+                           "colorName" : "blue-gray",
+                           "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/2",
+                           "id" : 2,
+                           "name" : "To Do",
+                           "key" : "new"
+                        },
+                        "iconUrl" : "http://192.168.99.100:32769/",
+                        "id" : "10000",
+                        "name" : "To Do",
+                        "description" : ""
+                     },
+                     "issuetype" : {
+                        "name" : "Sub-task",
+                        "description" : "The sub-task of the issue",
+                        "id" : "10000",
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/subtask_alternate.png",
+                        "subtask" : true,
+                        "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10000"
+                     },
+                     "priority" : {
+                        "name" : "Medium",
+                        "id" : "3",
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+                        "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+                     },
+                     "summary" : "horay, my subtask is here!"
+                  },
+                  "key" : "SCRUM-24"
+               }
+            ],
+            "fixVersions" : [
+               {
+                  "self" : "http://192.168.99.100:32769/rest/api/2/version/10001",
+                  "archived" : false,
+                  "releaseDate" : "2017-11-26",
+                  "released" : false,
+                  "id" : "10001",
+                  "name" : "Version 2.0"
+               }
+            ],
+            "assignee" : {
+               "avatarUrls" : {
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com"
+            },
+            "environment" : null,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "workratio" : -1,
+            "customfield_10005" : "0|i0002n:",
+            "lastViewed" : null,
+            "votes" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-13/votes",
+               "votes" : 0,
+               "hasVoted" : false
+            },
+            "summary" : "As a developer, I can update details on an item using the Detail View >> Click the \"SCRUM-13\" link at the top of this card to open the detail view",
+            "aggregateprogress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "description" : "*Editing using the Detail View*\n\nMany of the fields in the detail view can be inline edited by simply clicking on them. \n\nFor other fields you can open Quick Edit, select \"Edit\" from the cog drop-down.",
+            "issuelinks" : [],
+            "progress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "resolutiondate" : null,
+            "customfield_10000" : null,
+            "issuetype" : {
+               "iconUrl" : "http://192.168.99.100:32769/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+               "avatarId" : 10303,
+               "description" : "A problem which impairs or prevents the functions of the product.",
+               "name" : "Bug",
+               "id" : "10004",
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10004",
+               "subtask" : false
+            },
+            "versions" : [],
+            "priority" : {
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "name" : "Medium",
+               "id" : "3",
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+            },
+            "created" : "2017-11-12T05:40:04.000+0000",
+            "timeoriginalestimate" : null,
+            "watches" : {
+               "isWatching" : false,
+               "watchCount" : 0,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-13/watchers"
+            },
+            "status" : {
+               "statusCategory" : {
+                  "colorName" : "blue-gray",
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/2",
+                  "name" : "To Do",
+                  "id" : 2,
+                  "key" : "new"
+               },
+               "iconUrl" : "http://192.168.99.100:32769/",
+               "name" : "To Do",
+               "id" : "10000",
+               "description" : "",
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/10000"
+            },
+            "creator" : {
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "active" : true
+            },
+            "aggregatetimespent" : null,
+            "updated" : "2017-11-12T05:40:04.000+0000",
+            "reporter" : {
+               "avatarUrls" : {
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com"
+            }
+         },
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "key" : "SCRUM-13"
+      },
+      {
+         "key" : "SCRUM-12",
+         "id" : "10011",
+         "fields" : {
+            "aggregateprogress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "summary" : "When the last task is done, the story can be automatically closed >> Drag this task to \"Done\" too",
+            "votes" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-12/votes",
+               "hasVoted" : false,
+               "votes" : 0
+            },
+            "lastViewed" : null,
+            "customfield_10005" : "0|i0002f:",
+            "workratio" : -1,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "environment" : null,
+            "assignee" : null,
+            "fixVersions" : [
+               {
+                  "released" : false,
+                  "releaseDate" : "2017-11-26",
+                  "id" : "10001",
+                  "name" : "Version 2.0",
+                  "archived" : false,
+                  "self" : "http://192.168.99.100:32769/rest/api/2/version/10001"
+               }
+            ],
+            "subtasks" : [],
+            "duedate" : null,
+            "project" : {
+               "key" : "SCRUM",
+               "id" : "10000",
+               "name" : "scrum-example",
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "avatarUrls" : {
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324"
+               }
+            },
+            "resolution" : null,
+            "timespent" : null,
+            "labels" : [],
+            "aggregatetimeestimate" : null,
+            "components" : [],
+            "aggregatetimeoriginalestimate" : null,
+            "parent" : {
+               "key" : "SCRUM-10",
+               "id" : "10009",
+               "fields" : {
+                  "summary" : "As a developer, I can update story and task status with drag and drop (click the triangle at far left of this story to show sub-tasks)",
+                  "priority" : {
+                     "id" : "3",
+                     "name" : "Medium",
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+                     "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+                  },
+                  "status" : {
+                     "self" : "http://192.168.99.100:32769/rest/api/2/status/3",
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+                     "statusCategory" : {
+                        "colorName" : "yellow",
+                        "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4",
+                        "id" : 4,
+                        "name" : "In Progress",
+                        "key" : "indeterminate"
+                     },
+                     "description" : "This issue is being actively worked on at the moment by the assignee.",
+                     "id" : "3",
+                     "name" : "In Progress"
+                  },
+                  "issuetype" : {
+                     "subtask" : false,
+                     "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10002",
+                     "description" : "Created by JIRA Software - do not edit or delete. Issue type for a user story.",
+                     "name" : "Story",
+                     "id" : "10002",
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/story.svg"
+                  }
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/10009"
+            },
+            "timeestimate" : null,
+            "reporter" : {
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "active" : true,
+               "timeZone" : "Etc/UTC",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               }
+            },
+            "updated" : "2017-11-16T15:07:04.000+0000",
+            "aggregatetimespent" : null,
+            "status" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/3",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+               "statusCategory" : {
+                  "name" : "In Progress",
+                  "id" : 4,
+                  "key" : "indeterminate",
+                  "colorName" : "yellow",
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4"
+               },
+               "id" : "3",
+               "description" : "This issue is being actively worked on at the moment by the assignee.",
+               "name" : "In Progress"
+            },
+            "creator" : {
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "timeZone" : "Etc/UTC",
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "active" : true,
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000"
+            },
+            "watches" : {
+               "isWatching" : false,
+               "watchCount" : 0,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-12/watchers"
+            },
+            "timeoriginalestimate" : null,
+            "created" : "2017-11-16T15:07:04.000+0000",
+            "versions" : [],
+            "priority" : {
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "id" : "3",
+               "name" : "Medium",
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3"
+            },
+            "issuetype" : {
+               "description" : "The sub-task of the issue",
+               "name" : "Sub-task",
+               "id" : "10000",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/subtask_alternate.png",
+               "subtask" : true,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10000"
+            },
+            "customfield_10000" : null,
+            "resolutiondate" : null,
+            "progress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "description" : null,
+            "issuelinks" : []
+         },
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10011"
+      },
+      {
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10010",
+         "id" : "10010",
+         "fields" : {
+            "progress" : {
+               "total" : 0,
+               "progress" : 0
+            },
+            "description" : null,
+            "issuelinks" : [],
+            "versions" : [],
+            "priority" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+               "name" : "Medium",
+               "id" : "3"
+            },
+            "issuetype" : {
+               "name" : "Sub-task",
+               "id" : "10000",
+               "description" : "The sub-task of the issue",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/subtask_alternate.png",
+               "subtask" : true,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10000"
+            },
+            "customfield_10000" : null,
+            "resolutiondate" : null,
+            "aggregatetimespent" : null,
+            "status" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/3",
+               "statusCategory" : {
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4",
+                  "colorName" : "yellow",
+                  "key" : "indeterminate",
+                  "name" : "In Progress",
+                  "id" : 4
+               },
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+               "name" : "In Progress",
+               "id" : "3",
+               "description" : "This issue is being actively worked on at the moment by the assignee."
+            },
+            "creator" : {
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "timeZone" : "Etc/UTC",
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "active" : true
+            },
+            "watches" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-11/watchers",
+               "watchCount" : 0,
+               "isWatching" : false
+            },
+            "timeoriginalestimate" : null,
+            "created" : "2017-11-15T17:42:04.000+0000",
+            "reporter" : {
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "name" : "mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "active" : true,
+               "timeZone" : "Etc/UTC"
+            },
+            "updated" : "2017-11-15T17:42:04.000+0000",
+            "components" : [],
+            "aggregatetimeoriginalestimate" : null,
+            "timeestimate" : null,
+            "parent" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/10009",
+               "id" : "10009",
+               "fields" : {
+                  "priority" : {
+                     "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+                     "name" : "Medium",
+                     "id" : "3",
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg"
+                  },
+                  "status" : {
+                     "id" : "3",
+                     "name" : "In Progress",
+                     "description" : "This issue is being actively worked on at the moment by the assignee.",
+                     "statusCategory" : {
+                        "id" : 4,
+                        "name" : "In Progress",
+                        "key" : "indeterminate",
+                        "colorName" : "yellow",
+                        "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4"
+                     },
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+                     "self" : "http://192.168.99.100:32769/rest/api/2/status/3"
+                  },
+                  "issuetype" : {
+                     "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/story.svg",
+                     "name" : "Story",
+                     "id" : "10002",
+                     "description" : "Created by JIRA Software - do not edit or delete. Issue type for a user story.",
+                     "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10002",
+                     "subtask" : false
+                  },
+                  "summary" : "As a developer, I can update story and task status with drag and drop (click the triangle at far left of this story to show sub-tasks)"
+               },
+               "key" : "SCRUM-10"
+            },
+            "duedate" : null,
+            "project" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "avatarUrls" : {
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324",
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324"
+               },
+               "key" : "SCRUM",
+               "name" : "scrum-example",
+               "id" : "10000"
+            },
+            "timespent" : null,
+            "resolution" : null,
+            "labels" : [],
+            "aggregatetimeestimate" : null,
+            "workratio" : -1,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "environment" : null,
+            "assignee" : {
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "timeZone" : "Etc/UTC",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000"
+            },
+            "fixVersions" : [
+               {
+                  "archived" : false,
+                  "self" : "http://192.168.99.100:32769/rest/api/2/version/10001",
+                  "releaseDate" : "2017-11-26",
+                  "released" : false,
+                  "id" : "10001",
+                  "name" : "Version 2.0"
+               }
+            ],
+            "subtasks" : [],
+            "aggregateprogress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "summary" : "Update task status by dragging and dropping from column to column >> Try dragging this task to \"Done\"",
+            "votes" : {
+               "votes" : 0,
+               "hasVoted" : false,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-11/votes"
+            },
+            "lastViewed" : null,
+            "customfield_10005" : "0|i00027:"
+         },
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "key" : "SCRUM-11"
+      },
+      {
+         "key" : "SCRUM-10",
+         "id" : "10009",
+         "expand" : "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+         "fields" : {
+            "labels" : [],
+            "timespent" : null,
+            "resolution" : null,
+            "project" : {
+               "avatarUrls" : {
+                  "48x48" : "http://192.168.99.100:32769/secure/projectavatar?avatarId=10324",
+                  "32x32" : "http://192.168.99.100:32769/secure/projectavatar?size=medium&avatarId=10324",
+                  "16x16" : "http://192.168.99.100:32769/secure/projectavatar?size=xsmall&avatarId=10324",
+                  "24x24" : "http://192.168.99.100:32769/secure/projectavatar?size=small&avatarId=10324"
+               },
+               "self" : "http://192.168.99.100:32769/rest/api/2/project/10000",
+               "id" : "10000",
+               "name" : "scrum-example",
+               "key" : "SCRUM"
+            },
+            "duedate" : null,
+            "aggregatetimeestimate" : null,
+            "customfield_10006" : 5,
+            "aggregatetimeoriginalestimate" : null,
+            "components" : [],
+            "timeestimate" : null,
+            "aggregateprogress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "customfield_10005" : "0|i0001z:",
+            "lastViewed" : null,
+            "summary" : "As a developer, I can update story and task status with drag and drop (click the triangle at far left of this story to show sub-tasks)",
+            "votes" : {
+               "hasVoted" : false,
+               "votes" : 0,
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-10/votes"
+            },
+            "environment" : null,
+            "customfield_10004" : [
+               "com.atlassian.greenhopper.service.sprint.Sprint@38b1a49c[id=1,rapidViewId=1,state=ACTIVE,name=Sample Sprint 2,startDate=2017-11-12T05:40:08.403Z,endDate=2017-11-26T06:00:08.403Z,completeDate=<null>,sequence=1,goal=<null>]"
+            ],
+            "workratio" : -1,
+            "subtasks" : [
+               {
+                  "id" : "10010",
+                  "fields" : {
+                     "status" : {
+                        "self" : "http://192.168.99.100:32769/rest/api/2/status/3",
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+                        "statusCategory" : {
+                           "key" : "indeterminate",
+                           "id" : 4,
+                           "name" : "In Progress",
+                           "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4",
+                           "colorName" : "yellow"
+                        },
+                        "description" : "This issue is being actively worked on at the moment by the assignee.",
+                        "id" : "3",
+                        "name" : "In Progress"
+                     },
+                     "issuetype" : {
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/subtask_alternate.png",
+                        "name" : "Sub-task",
+                        "id" : "10000",
+                        "description" : "The sub-task of the issue",
+                        "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10000",
+                        "subtask" : true
+                     },
+                     "priority" : {
+                        "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg",
+                        "name" : "Medium",
+                        "id" : "3"
+                     },
+                     "summary" : "Update task status by dragging and dropping from column to column >> Try dragging this task to \"Done\""
+                  },
+                  "key" : "SCRUM-11",
+                  "self" : "http://192.168.99.100:32769/rest/api/2/issue/10010"
+               },
+               {
+                  "self" : "http://192.168.99.100:32769/rest/api/2/issue/10011",
+                  "fields" : {
+                     "issuetype" : {
+                        "subtask" : true,
+                        "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10000",
+                        "id" : "10000",
+                        "name" : "Sub-task",
+                        "description" : "The sub-task of the issue",
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/subtask_alternate.png"
+                     },
+                     "status" : {
+                        "description" : "This issue is being actively worked on at the moment by the assignee.",
+                        "id" : "3",
+                        "name" : "In Progress",
+                        "statusCategory" : {
+                           "colorName" : "yellow",
+                           "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4",
+                           "name" : "In Progress",
+                           "id" : 4,
+                           "key" : "indeterminate"
+                        },
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+                        "self" : "http://192.168.99.100:32769/rest/api/2/status/3"
+                     },
+                     "priority" : {
+                        "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+                        "id" : "3",
+                        "name" : "Medium",
+                        "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg"
+                     },
+                     "summary" : "When the last task is done, the story can be automatically closed >> Drag this task to \"Done\" too"
+                  },
+                  "id" : "10011",
+                  "key" : "SCRUM-12"
+               }
+            ],
+            "assignee" : {
+               "avatarUrls" : {
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32"
+               },
+               "name" : "mikedev9000",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000"
+            },
+            "fixVersions" : [
+               {
+                  "self" : "http://192.168.99.100:32769/rest/api/2/version/10001",
+                  "archived" : false,
+                  "id" : "10001",
+                  "name" : "Version 2.0",
+                  "releaseDate" : "2017-11-26",
+                  "released" : false
+               }
+            ],
+            "issuetype" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issuetype/10002",
+               "subtask" : false,
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/issuetypes/story.svg",
+               "id" : "10002",
+               "name" : "Story",
+               "description" : "Created by JIRA Software - do not edit or delete. Issue type for a user story."
+            },
+            "versions" : [],
+            "priority" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/priority/3",
+               "name" : "Medium",
+               "id" : "3",
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/priorities/medium.svg"
+            },
+            "resolutiondate" : null,
+            "customfield_10000" : null,
+            "progress" : {
+               "progress" : 0,
+               "total" : 0
+            },
+            "description" : null,
+            "issuelinks" : [],
+            "reporter" : {
+               "emailAddress" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "key" : "mikedev9000",
+               "active" : true,
+               "timeZone" : "Etc/UTC",
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               },
+               "name" : "mikedev9000"
+            },
+            "updated" : "2017-11-12T05:40:04.000+0000",
+            "creator" : {
+               "timeZone" : "Etc/UTC",
+               "active" : true,
+               "key" : "mikedev9000",
+               "displayName" : "michael1.cis@gmail.com",
+               "self" : "http://192.168.99.100:32769/rest/api/2/user?username=mikedev9000",
+               "emailAddress" : "michael1.cis@gmail.com",
+               "name" : "mikedev9000",
+               "avatarUrls" : {
+                  "48x48" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=48",
+                  "32x32" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=32",
+                  "24x24" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=24",
+                  "16x16" : "http://www.gravatar.com/avatar/7cab61d102e0ec19fd09e5b4a1001d2e?d=mm&s=16"
+               }
+            },
+            "status" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/status/3",
+               "statusCategory" : {
+                  "key" : "indeterminate",
+                  "name" : "In Progress",
+                  "id" : 4,
+                  "self" : "http://192.168.99.100:32769/rest/api/2/statuscategory/4",
+                  "colorName" : "yellow"
+               },
+               "iconUrl" : "http://192.168.99.100:32769/images/icons/statuses/inprogress.png",
+               "id" : "3",
+               "name" : "In Progress",
+               "description" : "This issue is being actively worked on at the moment by the assignee."
+            },
+            "aggregatetimespent" : null,
+            "created" : "2017-11-12T05:40:04.000+0000",
+            "timeoriginalestimate" : null,
+            "watches" : {
+               "self" : "http://192.168.99.100:32769/rest/api/2/issue/SCRUM-10/watchers",
+               "watchCount" : 0,
+               "isWatching" : false
+            }
+         },
+         "self" : "http://192.168.99.100:32769/rest/api/2/issue/10009"
+      }
+   ],
+   "maxResults" : 50,
+   "total" : 9,
+   "startAt" : 0
+}

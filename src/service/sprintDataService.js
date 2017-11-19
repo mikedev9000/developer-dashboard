@@ -1,4 +1,4 @@
-import request from 'superagent';
+import jira from '../client/jira';
 
 /**
  * TODO - make this service load data from an API like this example: http://www.sohamkamani.com/blog/2016/06/05/redux-apis/ 
