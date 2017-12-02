@@ -23,8 +23,10 @@
     "react": "15.0.2",
     "react-bootstrap": "^0.31.5",
     "react-dom": "15.0.2",
+    "react-notification-system": "^0.2.16",
     "react-redux": "4.4.5",
     "redux": "3.5.2",
+    "redux-localstorage": "^1.0.0-rc5",
     "superagent": "^3.8.1"
   },
   "license": "MIT",

@@ -7,6 +7,8 @@ import './../styles/main.scss';
 
 import WorkQueue from './WorkQueue';
 
+import NotificationSystem from 'react-notification-system';
+
 class Root extends Component {
 
     /**
@@ -37,6 +39,12 @@ class Root extends Component {
      * Life Cycle function - componentDidMount
      */
     componentDidMount() {
+        this._notificationSystem = this.refs.notificationSystem;
+
+        setTimeout(() => this._notificationSystem.addNotification({
+            message: 'Notification message',
+            level: 'success'
+          }), 5000);
     }
 
     /**
@@ -93,6 +101,8 @@ class Root extends Component {
                         buildsFailing={this.props.buildsFailing}
                     />
                 </div>
+
+                <NotificationSystem ref="notificationSystem" />
             </div>
 
         );

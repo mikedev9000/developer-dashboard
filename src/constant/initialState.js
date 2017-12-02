@@ -6,5 +6,9 @@ export default{
   builds: {
     failing: [],
     recent: []
+  },
+  mine: {
+    sprintTaskMetadata: [],
+    todos: []
   }
 }
