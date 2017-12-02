@@ -44,6 +44,19 @@ class Jira {
     });
   }
 
+  static getActivity(onSuccess, onError) {
+    const request = XMLHttpRequest();
+    request.onreadystatechange = function() {
+      if(this.readyState == 4 && this.status === 200) {
+        const xml = this.responseXML;
+        console.log(xml);
+      }
+    };
+
+    request.open('GET', 'jira/activity', true);
+    request.send();
+  }
+
 }
 
 export default Jira;
