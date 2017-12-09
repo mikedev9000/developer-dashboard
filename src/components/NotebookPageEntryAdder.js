@@ -32,7 +32,6 @@ class NotebookPageAdder extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('submitting with state: ', this.state);
     this.props.actions.saveEntry(
       this.props.pageId,
       {

@@ -4,6 +4,7 @@ import { bindActionCreators, dispatch } from 'redux';
 import * as notebookActions from '../actions/notebookActions';
 import { Col, Row } from 'react-bootstrap';
 import NotebookPageEntryAdder from './NotebookPageEntryAdder';
+import NotebookPageEntryList from './NotebookPageEntryList';
 
 class NotebookPage extends React.Component {
   constructor(props) {
@@ -12,16 +13,18 @@ class NotebookPage extends React.Component {
   }
 
   render() {
-    // TODO - simple way to add entries
-    // TODO list existing entries
-
     return (
       <div>
         <Row>
           {this.props.notebook[this.props.pageId].title}
         </Row>
+        <hr />
         <Row>
           <NotebookPageEntryAdder pageId={this.props.pageId} />
+        </Row>
+        <hr />
+        <Row>
+          <NotebookPageEntryList pageId={this.props.pageId} />
         </Row>
       </div>
     );
