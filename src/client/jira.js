@@ -10,6 +10,9 @@ const mockData = {
 class Jira {
 
   static getIssuesInCurrentSprint(onSuccess, onError) {
+    if(!env.jira.enabled) {
+      return;
+    }
     request
     .get(`/jira/rest/api/2/search`)
     .auth(env.jira.username, env.jira.password)

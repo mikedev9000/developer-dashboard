@@ -5,6 +5,9 @@ import env from  '../.env.js';
 class Bamboo {
 
   static getFailingBuilds(onSuccess, onError) {
+    if(!env.bamboo.enabled) {
+      return;
+    }
     request
     .get('/bamboo/rest/api/5.5.0/result')
     .query({

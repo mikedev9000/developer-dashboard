@@ -1,82 +1,18 @@
-import React, { Component, PropTypes } from "react";
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as testActions from './../actions/testActions';
+import React from "react";
 import logo from './../img/welcome.png';
 import './../styles/main.scss';
 
 import WorkQueue from './WorkQueue';
+import Home from './Home';
+import Notebook from './Notebook';
 
-class Root extends Component {
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
-    /**
-     *
-     * @param props
-     */
-    constructor(props) {
-        super(props);
-        this._initRoot();
-        this.state = {};
-    }
-
-    /**
-     *
-     * @private
-     */
-    _initRoot() {
-        //bind custom function here
-    }
-
-    /**
-     * Life Cycle function - componentWillMount
-     */
-    componentWillMount() {
-    }
-
-    /**
-     * Life Cycle function - componentDidMount
-     */
-    componentDidMount() {
-    }
-
-    /**
-     * Life Cycle function - componentWillReceiveProps
-     * @param newProps
-     */
-    componentWillReceiveProps(newProps) {
-    }
-
-    /**
-     * Life Cycle function - shouldComponentUpdate
-     * @param newProps
-     * @param newState
-     * @returns {boolean}
-     */
-    shouldComponentUpdate(newProps, newState) {
-        return true;
-    }
-
-    /**
-     * Life Cycle function - componentWillUpdate
-     * @param nextProps
-     * @param nextState
-     */
-    componentWillUpdate(nextProps, nextState) {
-    }
-
-    /**
-     * Life Cycle function - componentDidUpdate
-     * @param prevProps
-     * @param prevState
-     */
-    componentDidUpdate(prevProps, prevState) {
-    }
-
-    /**
-     * Life Cycle function - componentWillUnmount
-     */
-    componentWillUnmount() {
-    }
+class Root extends React.Component {
 
     /**
      * Life Cycle function - render
@@ -86,57 +22,24 @@ class Root extends Component {
         return (
 
             <div className='container'>
-                <div className="row">
-                    <WorkQueue 
-                        sprintTasks={this.props.sprintTasks}
-                        codeReviews={this.props.codeReviews}
-                        buildsFailing={this.props.buildsFailing}
-                    />
+              <Router>
+                <div>
+                  <ul>
+                    <li><Link to="/work-queue">WorkQueue</Link></li>
+                    <li><Link to="/notebook">Notebook</Link></li>
+                  </ul>
+
+                  <hr/>
+
+                  <Route exact path="/" component={Home}/>
+                  <Route path="/work-queue" component={WorkQueue}/>
+                  <Route path="/notebook" component={Notebook}/>
                 </div>
+              </Router>
             </div>
 
         );
     }
 }
 
-/**
- *
- * @type {{}}
- */
-Root.propTypes = {};
-
-/**
- *
- * @type {{}}
- */
-Root.defaultProps = {};
-
-/**
- *
- * @param state
- * @returns {{state: *}}
- */
-function mapStateToProps(state) {
-    return {
-        state: state,
-        message: state.testObj,
-        sprintTasks: state.sprint.tasks,
-        codeReviews: state.codeReviews,
-        buildsFailing: state.builds.failing,
-        buildsRecent: state.builds.recent
-    };
-}
-
-/**
- *
- * @param dispatch
- * @returns {{actions: *}}
- */
-function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators(testActions, dispatch)
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(
-    Root);
+export default Root;

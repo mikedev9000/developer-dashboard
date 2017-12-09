@@ -1,4 +1,6 @@
-import React,{Component,PropTypes} from "react";
+import React from "react";
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { ListGroup, ListGroupItem, Row, Col } from 'react-bootstrap';
 
 /**
@@ -7,7 +9,7 @@ import { ListGroup, ListGroupItem, Row, Col } from 'react-bootstrap';
 const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
   <div className="work-queue">
     <ListGroup>
-      {buildsFailing.map(item => 
+      {buildsFailing.map(item =>
         <div className="failing-build" key={`buildFailing-${item.buildJob}-${item.firstFailure.executionNumber}`}>
           <ListGroupItem>
             Failing Builds: {item.buildJob} - {item.firstFailure.executionNumber}
@@ -15,7 +17,7 @@ const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
         </div>
       )}
 
-      {codeReviews.map(item => 
+      {codeReviews.map(item =>
         <ListGroupItem key={`codeReview-${item.id}`}>
          Code Review: {item.repository} - {item.title} - {item.sourceBranch} to {item.targetBranch}
         </ListGroupItem>
@@ -24,7 +26,7 @@ const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
       {sprintTasks
         .filter(item => !item.assignee || item.assignee.isMe)
         .filter(item => !item.state.isClosed)
-        .map(item => 
+        .map(item =>
           <div key={`sprintTask-${item.id}`} className={item.state.isClosed ? 'item-closed' : 'item-open'}>
             <ListGroupItem>
               <Row>
@@ -45,4 +47,30 @@ const WorkQueue = ({ sprintTasks, codeReviews, buildsFailing }) => (
   </div>
 );
 
-export default WorkQueue;
+/**
+ *
+ * @param state
+ * @returns {{state: *}}
+ */
+function mapStateToProps(state) {
+  return {
+      sprintTasks: state.sprint.tasks,
+      codeReviews: state.codeReviews,
+      buildsFailing: state.builds.failing,
+      buildsRecent: state.builds.recent
+  };
+}
+
+/**
+*
+* @param dispatch
+* @returns {{actions: *}}
+*/
+function mapDispatchToProps(dispatch) {
+  return {
+      //actions: bindActionCreators(testActions, dispatch)
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(
+  WorkQueue);

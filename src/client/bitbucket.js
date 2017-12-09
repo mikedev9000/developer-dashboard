@@ -5,6 +5,9 @@ import env from  '../.env.js';
 class Bitbucket {
 
   static getPullRequests(onSuccess, onError) {
+    if(!env.bitbucket.enabled) {
+      return;
+    }
     request
     .get('/bitbucket/rest/api/1.0//dashboard/pull-requests')
     .query({
