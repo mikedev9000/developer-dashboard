@@ -1,10 +1,11 @@
 import * as types from "./../constant/actionTypes";
 import uuid from 'uuid/v4';
 
-export function createPage(){
+export function createPage(title){
   return{
     type:types.NOTEBOOK_CREATE_PAGE,
-    pageId: uuid()
+    pageId: uuid(),
+    title
   };
 }
 

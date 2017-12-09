@@ -2,17 +2,46 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, dispatch } from 'redux';
 import * as notebookActions from '../actions/notebookActions';
+import { Col, Row } from 'react-bootstrap';
+import NotebookPage from './NotebookPage';
 
-const Notebook = () => (
-  <div>Notebook yeah</div>
-);
+
+class Notebook extends React.Component{
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <Row>
+        <Col xs={2}>
+          <ul>
+            {Object.values(this.props.notebook).map(page => (
+              <li key={page.pageId}>
+                <a onClick={(event) => {
+                  console.log('yay ', page);
+                  event.preventDefault();
+                  this.setState({
+                    page
+                  })
+                  }}>{page.title}</a>
+              </li>
+            ))}
+          </ul>
+        </Col>
+        <Col xs={10}>
+            {this.state.page && <NotebookPage pageId={this.state.page.pageId} />}
+        </Col>
+      </Row>
+    );
+  }
+}
 
 function mapStateToProps(state) {
   return {
-      sprintTasks: state.sprint.tasks,
-      codeReviews: state.codeReviews,
-      buildsFailing: state.builds.failing,
-      buildsRecent: state.builds.recent
+      notebook: state.notebook
   };
 }
 

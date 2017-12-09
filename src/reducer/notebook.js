@@ -7,7 +7,7 @@ export default function notebook(state = {}, action) {
         ...state,
         [action.pageId]: {
           pageId: action.pageId,
-          title: '',
+          title: action.title,
           entries: {},
           lastUpdate: new Date()
         }
