@@ -4,6 +4,7 @@ import { bindActionCreators, dispatch } from 'redux';
 import * as notebookActions from '../actions/notebookActions';
 import { Col, Row } from 'react-bootstrap';
 import NotebookPage from './NotebookPage';
+import NotebookPageAdder from './NotebookPageAdder';
 
 
 class Notebook extends React.Component{
@@ -17,6 +18,7 @@ class Notebook extends React.Component{
     return (
       <Row>
         <Col xs={2}>
+          <Row><NotebookPageAdder /></Row>
           <ul>
             {Object.values(this.props.notebook).map(page => (
               <li key={page.pageId}>
