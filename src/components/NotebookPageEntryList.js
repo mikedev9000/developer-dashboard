@@ -3,11 +3,19 @@ import { connect } from 'react-redux';
 import { bindActionCreators, dispatch } from 'redux';
 import * as notebookActions from '../actions/notebookActions';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import colors from '../constant/colors';
 
 class NotebookPageList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    this.colorByType = {
+      thought: colors.cyan,
+      hypothesis: colors.yellow,
+      fact: colors.green,
+      experiment: colors.purple
+    }
   }
 
   render() {
@@ -17,7 +25,11 @@ class NotebookPageList extends React.Component {
     return (
       <ListGroup>
         {Object.values(page.entries).map(entry => (
-          <ListGroupItem key={entry.entryId}>{entry.entryId} - {entry.title} - {entry.type}</ListGroupItem>
+          <ListGroupItem
+            key={entry.entryId}
+          >
+            {entry.entryId} - {entry.title} - <span style={{ color: this.colorByType[entry.type] }}>{entry.type}</span>
+          </ListGroupItem>
         ))}
       </ListGroup>
     );
