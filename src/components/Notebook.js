@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, dispatch } from 'redux';
 import * as notebookActions from '../actions/notebookActions';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
 import NotebookPage from './NotebookPage';
 import NotebookPageAdder from './NotebookPageAdder';
 
@@ -19,19 +19,22 @@ class Notebook extends React.Component{
       <Row>
         <Col xs={2}>
           <Row><NotebookPageAdder /></Row>
-          <ul>
+          <ListGroup>
             {Object.values(this.props.notebook).map(page => (
-              <li key={page.pageId}>
-                <a onClick={(event) => {
-                  console.log('yay ', page);
+              <ListGroupItem key={page.pageId}
+                onClick={(event) => {
                   event.preventDefault();
+                  event.stopPropagation();
                   this.setState({
                     page
                   })
-                  }}>{page.title}</a>
-              </li>
+                  }}
+                active={this.state.page && this.state.page.pageId === page.pageId}
+              >
+                {page.title}
+              </ListGroupItem>
             ))}
-          </ul>
+          </ListGroup>
         </Col>
         <Col xs={10}>
             {this.state.page && <NotebookPage pageId={this.state.page.pageId} />}
