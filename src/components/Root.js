@@ -7,6 +7,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import WorkQueue from './WorkQueue';
 import Home from './Home';
 import Notebook from './Notebook';
+import Scratch from './Scratch';
 
 import {
   BrowserRouter as Router,
@@ -35,12 +36,16 @@ class Root extends React.Component {
                 <NavItem eventKey={2}>
                   <Link to="/notebook">Notebook</Link>
                 </NavItem>
+                <NavItem eventKey={3}>
+                <Link to="/scratch">Scratch</Link>
+                </NavItem>
               </Nav>
             </Navbar>
 
             <Route exact path="/" component={Home} />
             <Route path="/work-queue" component={WorkQueue} />
             <Route path="/notebook" component={Notebook} />
+            <Route path="/scratch" component={Scratch} />
           </div>
         </Router>
       </div>
