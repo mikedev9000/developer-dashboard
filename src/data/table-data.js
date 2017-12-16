@@ -12,7 +12,7 @@ const data = [];
 
 for(var i = 0; i < 100; i++) {
   data.push({
-    timestamp: new Date(i).toDateString(),
+    timestamp: new Date(i).toISOString(),
     temperature: sinHelperWithNoise(i / 100, 0, 100, 10),
     bar: i % 8 !== 0 && sinHelperWithNoise(i / 100, -100, 200, 100),
     foo: i % 8 !== 0 && sinHelperWithNoise(i / 100, -100, 200, 1000)

@@ -16,7 +16,7 @@ class Scratch extends React.Component {
   render() {
     return (
       <div>
-        <LineChart width={400} height={300} data={data}
+        <LineChart width={800} height={150} data={data}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           syncId="foo">
           <XAxis dataKey="timestamp" />
@@ -26,7 +26,7 @@ class Scratch extends React.Component {
           <Legend />
           <Line connectNulls type="monotone" dataKey="temperature" stroke="#8884d8" />
         </LineChart>
-        <LineChart width={400} height={300} data={data}
+        <LineChart width={800} height={150} data={data}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           syncId="foo">
           <XAxis dataKey="timestamp" />
@@ -37,13 +37,19 @@ class Scratch extends React.Component {
           <Line connectNulls type="monotone" dataKey="foo" stroke="#8884d8" />
           <Line connectNulls type="monotone" dataKey="bar" stroke="#bbbbbb" />
         </LineChart>
-        <div style={{ height: 115 }} className="ag-theme-fresh">
+        <div style={{ height: 300 }} className="ag-theme-fresh">
           <AgGridReact
             // properties
             rowData={data}
 
             // events
-            onGridReady={(params) => this.onGridReady(params)}>
+            onGridReady={(params) => this.onGridReady(params)}
+
+            enableSorting
+
+            onRowSelected={(e) => console.log(e)}
+
+            >
 
             {/*column definitions */}
             <AgGridColumn field="timestamp"></AgGridColumn>

@@ -8,7 +8,7 @@ import Root from './components/Root';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // pull in the ag-grid styles we're interested in
 import "../node_modules/ag-grid/dist/styles/ag-grid.css";
-import "../node_modules/ag-grid/dist/styles/theme-fresh.css";
+import "../node_modules/ag-grid/dist/styles/ag-theme-fresh.css";
 
 const store = configureStore();
 
